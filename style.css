@@ -237,13 +237,14 @@ margin: 0;
 }
 @media (max-width: 768px) {
     nav ul a{
-        margin: 0px 15px 0px 0px;
+        margin: 10px 15px 15px 0px;
     }
     nav ul li {
         width: max-content;
     }
     nav ul {
         overflow-x: scroll;
+        margin: 10px 0px 5px 0px;
     }
     .fundo{
         background-size: auto;
