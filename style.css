@@ -16,6 +16,8 @@ a{
     display: flex;
     justify-content: center;
     background: url(https://storagefileta.blob.core.windows.net/ticketagora/site/TS-SUMMIT-2024/image-principal-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 header {
     display: flex;
