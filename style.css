@@ -1,0 +1,345 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Open Sans, sans-serif;
+}
+a{
+    text-decoration: none;
+    
+}
+.fixed-size{
+    max-width: 1900px;
+    width: 100%;
+}
+.fundo{
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    background: url(https://storagefileta.blob.core.windows.net/ticketagora/site/TS-SUMMIT-2024/image-principal-desktop.svg);
+}
+header {
+    display: flex;
+    width: 100%;
+}
+nav{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(34, 34, 34, 0.56) 0%, rgba(34, 34, 34, 0.88) 100%);
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;    
+    max-width: 600px;
+    width: 100%;
+}
+nav ul li{
+    list-style: none;
+    color: #FFF;
+    font-family: Open Sans, sans-serif;
+}
+.active{    
+    border-bottom: 3px solid #09F;
+}
+.content{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin: 250px 0px 50px 0px;
+}
+.content p:first-child{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 35px 0px;
+}
+.content .belong{
+    font-family: 'Akira Expanded', sans-serif;
+font-size: 20px;
+font-weight: 400;
+line-height: 36px;
+letter-spacing: 0em;
+text-align: center;
+margin: 35px 0px;
+}
+.btn-inscreva button{
+    border: none;
+    padding: 12px 25px;
+    color: #FFF;
+    background-color: #09F;
+font-size: 18px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: center;
+border-radius: 8px;
+margin: 0px 0px 150px 0px;
+}
+.conheca-ts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+.conheca-ts h2{
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 55px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 40%;
+}
+.conheca-ts p{
+font-size: 22px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0em;
+width: 55%;
+}
+.conheca-ts h3{
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 27.61px;
+    color: rgba(3, 37, 140, 1);
+}
+.atracoes{
+    display: flex;
+    justify-content: space-between;
+    color: #060606;
+    width: 70%;
+    margin: 20px auto auto auto;
+    border-top: 1px solid rgba(225, 223, 218, 1);
+    padding: 20px;
+}
+.atracoes h3{
+    color: #060606;
+    font-size: 18px;
+}
+.wrapper{
+    display: flex;
+    max-width: 1300px;
+    width: 100%;
+    background-color: rgba(3, 37, 140, 1);
+    border-radius: 16px;
+}
+.wrapper-blue{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: normal;
+    text-align: left;
+    justify-content: flex-end;
+}
+.wrapper-blue h3{
+    background-color: rgba(3, 37, 140, 1);
+    color: #FFF;
+    width: 91%;
+    height: 299px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px 0px 40px;
+    position: absolute;
+    top: -177px;
+    left: -73px;
+}
+.conteudo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    margin: 50px 0px;
+}
+.video-back{
+    margin: auto;
+position: relative;
+}
+.video-back .fundo-mobile{
+    display: none;
+}
+.video-back img{
+    border-radius: 16px;
+}
+.video-back::before {
+    content: ''; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 16px;
+    opacity: 0.64;
+    height: 99.5%;
+    background: radial-gradient(50% 50% at 50% 50%, #03258C 0%, #222222 100%); 
+    pointer-events: none;
+}
+.video-play{
+    position: absolute;
+}
+#sectionPalestra{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#sectionPalestra h2{
+    font-family: Akira Expanded;
+font-size: 48px;
+font-weight: 700;
+line-height: 55.22px;
+margin: 0;
+}
+#sectionPalestra p{
+    font-family: Open Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 29.96px;
+    width: 50%;
+}
+.wrapper-cards{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.cards h4{
+    font-family: Akira Expanded;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 19.56px;
+}
+.cards img{
+    width: 300px;
+    height: 400px;
+    border-radius: 16px;
+}
+.cards p{
+    margin: 0px;
+}
+@media (max-width: 768px) {
+    nav ul a{
+        margin: 0px 15px 0px 0px;
+    }
+    nav ul li {
+        width: max-content;
+    }
+    nav ul {
+        overflow-x: scroll;
+    }
+    .fundo{
+        background-size: auto;
+    }
+    .content{
+        margin: 110px 0px 50px 0px;
+        width: 90%;
+    }
+    .content img{
+        width: 100%;
+    }
+    .conheca-ts{        
+        padding: 0px 10px;
+    }
+    .conheca-ts h2{
+        font-size: 24px;
+        width: 100%;
+    }
+    .conheca-ts p{
+        width: 100%;
+        margin: auto;
+        font-size: 16px;
+    }
+    .conheca-ts h3{
+        text-align: center;
+        width: 100%;
+        font-size: 18px;
+    }
+    .atracoes{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+    }
+    .atracoes h3{
+        margin: 5px 0px;
+    }
+    .atracoes img{
+        display: none;
+    }
+    .wrapper{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 16px;
+    }
+    .wrapper img{
+        border-radius: 16px;
+        width: 100%;
+    }
+    .wrapper-blue h3{
+        position: sticky;
+        height: auto;
+        text-align: left;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .conteudo{
+        margin: 50px 0px 20px 0px;
+    }
+    .video-back{
+        width: 100%;
+    }
+    .video-back .fundo-mobile{
+        display: block;
+        position: inherit;
+    }
+    .video-back .fundo-video{
+        display: none;
+    }
+    .video-back img {
+        width: 100%;
+    }
+    .video-play img{
+        width: 100%;
+    }
+    #sectionPalestra h2{
+        font-size: 24px;
+    }
+    #sectionPalestra p{
+        width: 90%;
+        margin: 0px 0px 20px 0px;
+    }
+    .wrapper-cards{
+        overflow: scroll;
+        width: 95%;
+    }
+    .cards{
+        margin: auto 30px auto auto;
+    }
+    .cards:last-child{
+        margin: 0;
+    }
+    .cards h4{
+        margin: 10px 0px 5px 0px;
+    }
+    .cards p{
+        text-align: left;
+        margin: 0px;
+    }
+}

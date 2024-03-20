@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/akira-expanded" rel="stylesheet">
+    <title>TS SUMMIT</title>
+  </head>
+  <body>
+    <header >
+      <nav>
+        <ul>
+          <a href="#sectionInicio" onclick="changeActive(this)">
+              <li>Início</li>
+          </a>
+          <a href="#sectionConheca" onclick="changeActive(this)">
+              <li>O TS Summit</li>
+          </a>
+          <a href="#sectionPalestra">
+              <li>Palestrantes</li>
+          </a>
+          <a href="#sectionIngressos">
+              <li>Ingressos</li>
+          </a>
+          <a href="#sectionAgenda">
+              <li>Agenda</li>
+          </a>
+          <a href="#sectionPatrocinadores">
+              <li>Patrocinadores</li>
+          </a>
+        </ul>
+      </nav>
+      
+      
+      </header>
+    <div class="fixed-size">
+      <section class="fundo" id="sectionInicio">
+
+            <div class="content">
+                <p>3 e 4 de Setembro  ·  Unibes Cultural, São Paulo, SP </p>
+                <img src="https://storagefileta.blob.core.windows.net/ticketagora/site/TS-SUMMIT-2024/logo-tssummit.svg" alt="">
+              <p class="belong">PAST BELONGS TO HEROES FUTURE BELONGS TO THE BOLD</p>
+              <div class="btn-inscreva">
+                <button>
+                    Inscreva-se já
+                </button>
+            </div>
+            </div>
+
+      </section>
+     <section class="conheca-ts" id="sectionConheca">
+        <h2>ConheÇa e viva o TS Summit</h2>
+        <p>O <strong>TS Summit</strong> é o maior evento para quem faz eventos do Brasil. O projeto nasceu em 2019 e chega a sua 4ª edição com muitas novidades e 2 dias de pura imersão.</p>
+
+            <p>Esse ano, com um novo contexto, o <strong>Ticket Sports</strong> une o passado, presente e futuro dos esportes para construir um novo legado.</p>
+
+            <h3>É tempo de esporte</h3>
+            <div class="atracoes">
+              <h3>Workshop</h3>
+              <img src="https://storagefileta.blob.core.windows.net/ticketagora/site/TS-SUMMIT-2024/icon-star.svg" alt="">
+              <h3>Networking</h3>
+              <img src="https://storagefileta.blob.core.windows.net/ticketagora/site/TS-SUMMIT-2024/icon-star.svg" alt="">
+              <h3>Feira de Negócios</h3>
+              <img src="https://storagefileta.blob.core.windows.net/ticketagora/site/TS-SUMMIT-2024/icon-star.svg" alt="">
+              <h3>Palestras</h3>
+              <img src="https://storagefileta.blob.core.windows.net/ticketagora/site/TS-SUMMIT-2024/icon-star.svg" alt="">
+              <h3>Happy Hour</h3>
+            </div>
+
+            <div class="wrapper">
+              <img src="https://storagefileta.blob.core.windows.net/ticketagora/site/TS-SUMMIT-2024/linha-tempo.svg" alt="">
+              <div class="wrapper-blue">
+                <h3>
+                  Vagas super limitadas para a experiência que vai te fazer saltar no tempo.
+                </h3>
+              </div>
+            </div>
+            <div class="conteudo">
+              <div class="video-back">
+                <img class="fundo-video" src="https://storagefileta.blob.core.windows.net/ticketagora/site/TS-SUMMIT-2024/video-image.svg" alt="">
+                <img class="fundo-mobile" src="https://storagefileta.blob.core.windows.net/ticketagora/site/TS-SUMMIT-2024/video-image-mobile.svg" alt="">
+              </div>
+              <div class="video-play">
+                <img src="https://storagefileta.blob.core.windows.net/ticketagora/site/TS-SUMMIT-2024/confira-2023.svg" alt="">
+              </div>
+            </div>
+     </section>
+     <section id="sectionPalestra">
+      <h2>palestrantes</h2>
+      <p>
+        O maior evento para quem faz evento chega à sua 4ª edição com muitas novidades e 2 dias de pura imersão.
+      </p>
+      <div class="wrapper-cards">
+        <div class="cards">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Roberto_Carlos_Credicard_Hall_%2842626066250%29.jpg/1200px-Roberto_Carlos_Credicard_Hall_%2842626066250%29.jpg" alt="">
+          <h4>Roberto Carlos</h4>
+          <p>Musico</p>
+        </div>
+        <div class="cards">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Roberto_Carlos_Credicard_Hall_%2842626066250%29.jpg/1200px-Roberto_Carlos_Credicard_Hall_%2842626066250%29.jpg" alt="">
+          <h4>Roberto Carlos</h4>
+          <p>Musico</p>
+        </div>
+        <div class="cards">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Roberto_Carlos_Credicard_Hall_%2842626066250%29.jpg/1200px-Roberto_Carlos_Credicard_Hall_%2842626066250%29.jpg" alt="">
+          <h4>Roberto Carlos</h4>
+          <p>Musico</p>
+        </div>
+      </div>
+     </section>
+    </div>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const sections = document.querySelectorAll('section');
+  const menuLinks = document.querySelectorAll('nav a');
+
+  window.addEventListener('scroll', function() {
+    let current = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    menuLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href').slice(1) === current) {
+        link.classList.add('active');
+      }
+    });
+  });
+});
+    </script>
+  </body>
+</html>
