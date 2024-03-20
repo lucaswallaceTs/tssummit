@@ -2,6 +2,9 @@ body{
     margin: 0;
     padding: 0;
     font-family: Open Sans, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 a{
     text-decoration: none;
@@ -29,7 +32,7 @@ nav{
     width: 100%;
     display: flex;
     justify-content: center;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(34, 34, 34, 0.56) 0%, rgba(34, 34, 34, 0.88) 100%);
+    background:#060606;
 }
 nav ul{
     display: flex;
@@ -144,17 +147,23 @@ width: 55%;
     text-align: left;
     justify-content: flex-end;
 }
-.wrapper-blue h3{
+.wrapper-blue .box{
     background-color: rgba(3, 37, 140, 1);
-    color: #FFF;
     width: 91%;
     height: 299px;
-    display: flex;
-    align-items: center;
-    padding: 0px 20px 0px 40px;
+    color: #FFF;
     position: absolute;
-    top: -177px;
+    display: flex;
+    top: -155px;
     left: -73px;
+}
+.wrapper-blue .box h3{     
+    margin: auto;
+    padding: 0px 20px 0px 40px;
+    color: #FFF;
+}
+.wrapper-blue .box h3 span{
+    text-decoration: underline;
 }
 .conteudo{
     width: 100%;
@@ -191,10 +200,11 @@ position: relative;
     position: absolute;
 }
 #sectionPalestra{
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: auto;
 }
 #sectionPalestra h2{
     font-family: Akira Expanded;
@@ -235,6 +245,140 @@ margin: 0;
 .cards p{
     margin: 0px;
 }
+#sectionIngressos{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.wrapper-ingressos{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    border-radius: 16px;
+    margin: 50px 0px;
+    background: rgba(3, 37, 140, 1);    
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 850px;
+    max-width: 1300px;
+    width: 100%;
+}
+.info-ingressos{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: url(https://storagefileta.blob.core.windows.net/ticketagora/site/TS-SUMMIT-2024/image-tempo.svg);
+    max-width: 1300px;
+    height: 850px;
+    border-radius: 16px;
+    width: 100%;
+}
+.title-ingressos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-ingressos h2{
+    font-family: Akira Expanded;
+font-size: 48px;
+font-weight: 700;
+line-height: 55.22px;
+text-align: center;
+width: 50%;
+color: #FFF;
+margin: 35px 0px 10px 0px;
+}
+.title-ingressos p{
+    font-family: Open Sans;
+font-size: 22px;
+font-weight: 400;
+line-height: 29.96px;
+text-align: center;
+color: #FFF;
+margin: 0;
+
+}
+.ingressos{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.card-ingresso{
+    background-color: #FFF;
+    border-radius: 16px 16px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 0px 20px;
+    width: 41%;
+}
+.card-ingresso h3{
+    font-family: Akira Expanded;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 55.22px;
+    text-align: center;
+    margin: 0;
+}
+.card-ingresso h2{
+    font-family: Open Sans, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.37px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    color: #060606;
+}
+.card-ingresso p{
+    margin: 0;
+    font-family: Open Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 21.79px;
+text-align: center;
+color: #060606;
+}
+.info-valor{
+    background-color: rgba(239, 240, 242, 1);
+    border-radius: 32px 32px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    padding: 40px;
+    width: 70%;
+}
+.info-valor p{
+font-size: 18px;
+font-weight: 700;
+line-height: 24.51px;
+margin: 10px 0px;
+}
+.info-valor .lote{
+    font-weight: 400;
+    font-size: 16px;
+}
+.card-ingresso button{
+    background-color: rgba(3, 37, 140, 1);
+    padding: 20px 0px;
+    width: 70%;
+    color: #FFF;
+    border: none;
+    border-radius: 16px;
+    font-weight: 700;
+}
+.wrapper-agenda{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 @media (max-width: 768px) {
     nav ul a{
         margin: 10px 15px 15px 0px;
@@ -249,13 +393,14 @@ margin: 0;
     .fundo{
         background-size: auto;
         height: 139vh;
+        margin-top: 45px;
     }
     .content{
         margin: 110px 0px 50px 0px;
-        width: 90%;
+        width: 95%;
     }
     .content p:first-child{
-        font-size: 14px;
+        font-size: 12px;
         margin: 35px 0px 10px 0px;
     }
     .content img{
@@ -270,6 +415,7 @@ margin: 0;
     .conheca-ts{        
         width: calc(100% - 20px);
         padding: 0px 10px;
+        margin-top: -80px;
     }
     .conheca-ts h2{
         font-size: 24px;
@@ -308,18 +454,25 @@ margin: 0;
         border-radius: 16px;
         width: 100%;
     }
-    .wrapper-blue h3{
+    .wrapper-blue .box{
         position: sticky;
         height: auto;
         text-align: left;
         font-size: 16px;
         line-height: 30px;
+        border-radius: 16px;
+        width: 100%;
+    }
+    .wrapper-blue .box h3{
+        padding: 10px 20px 10px 20px;
+        text-align: center;
     }
     .conteudo{
         margin: 50px 0px 20px 0px;
     }
     .video-back{
         width: 100%;
+        position: static;
     }
     .video-back .fundo-mobile{
         display: block;
@@ -331,8 +484,12 @@ margin: 0;
     .video-back img {
         width: 100%;
     }
+    .video-play{
+        display: flex;
+        justify-content: center;
+    }
     .video-play img{
-        width: 100%;
+        width: 70%;
     }
     #sectionPalestra h2{
         font-size: 24px;
@@ -357,5 +514,56 @@ margin: 0;
     .cards p{
         text-align: left;
         margin: 0px;
+    }
+    .info-ingressos{
+        justify-content: flex-start;
+    }
+    .wrapper-ingressos{
+        border-radius: 0;
+    }
+    .wrapper-ingressos, .info-ingressos{
+        height: 140vh;
+        width: 100%;
+    }
+    .borda{
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(225, 223, 218, 1);
+    }
+    .info-valor{
+        width: 80%;
+    }
+    .ingressos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-ingresso{
+        width: 100%;
+        border-radius: 16px;
+        margin-bottom: 25px;
+    }
+    .card-ingresso h2{
+        font-size: 32px;        
+        margin-bottom: 0px;
+        line-height: 43.58px;
+    }
+    .title-ingressos h2 {
+        font-size: 24px;
+        width: 100%;
+        margin: 35px 0px 0px 0px;
+    }
+    .title-ingressos p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    .info-valor{
+        background-color: #FFF;
+        padding: 0px 0px 40px 0px;
+        margin-top: 0px;
+    }
+    .card-ingresso h3 {
+        font-size: 15px;
+    }
+    .info-valor .lote{
+        margin: 0px 0px 15px 0px;
     }
 }
