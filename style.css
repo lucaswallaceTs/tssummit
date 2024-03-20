@@ -369,15 +369,73 @@ margin: 10px 0px;
     width: 70%;
     color: #FFF;
     border: none;
-    border-radius: 16px;
+    border-radius: 8px;
     font-weight: 700;
 }
 .wrapper-agenda{
     width: 100%;
+    max-width: 1300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgba(239, 240, 242, 1);
+    border-radius: 16px;
+    padding: 35px 0px;
+}
+#sectionAgenda{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.wrapper-agenda h3{
+    font-family: Akira Expanded;
+font-size: 32px;
+font-weight: 700;
+line-height: 36.81px;
+text-align: center;
+margin: 15px 0px 10px 0px;
+}
+.wrapper-agenda p{
+    margin: 0;
+}
+#sectionPatrocinadores{
+    margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sectionPatrocinadores{
+    max-width: 1300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sectionPatrocinadores h3{
+    font-family: Akira Expanded;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 27.61px;
+    text-align: center;    
+}
+.sectionPatrocinadores button{
+    background-color: rgba(3, 37, 140, 1);
+    padding: 20px 0px;
+    width: 10%;
+    color: #FFF;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+}
+.row-images{
+    margin: 15px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 @media (max-width: 768px) {
     nav ul a{
@@ -522,7 +580,7 @@ margin: 10px 0px;
         border-radius: 0;
     }
     .wrapper-ingressos, .info-ingressos{
-        height: 140vh;
+        height: 215vh;
         width: 100%;
     }
     .borda{
@@ -565,5 +623,18 @@ margin: 10px 0px;
     }
     .info-valor .lote{
         margin: 0px 0px 15px 0px;
+    }
+    .wrapper-agenda{
+        width: 90%;
+    }
+    .wrapper-agenda h3{
+        font-size: 24px;
+    }
+    .sectionPatrocinadores button{
+        width: 50%;
+        font-weight: 700;
+    }
+    .row-images{
+        overflow: scroll;
     }
 }
