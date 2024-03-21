@@ -6,6 +6,11 @@ body{
     flex-direction: column;
     align-items: center;
 }
+@media screen and (min-width: 1440px) {
+    .fundo{
+        height: 105vh !important;
+    }
+}
 @font-face {
     font-family: Akira Expanded;
     src: url('akira_expanded/Akira-Expanded-Demo.otf'); 
@@ -19,7 +24,7 @@ a{
     width: 100%;
 }
 .fundo{
-    height: 130vh;
+    height: 125vh;
     display: flex;
     justify-content: center;
     background: url(https://storagefileta.blob.core.windows.net/ticketagora/site/TS-SUMMIT-2024/image-principal-desktop.svg);
@@ -36,8 +41,19 @@ nav{
     width: 100%;
     display: flex;
     justify-content: center;
-    background:#060606;
+    background:transparent;
+    transition: color 0.6s ease;
 }
+nav ul li a {
+    text-decoration: none;
+    color: #000; /* Cor dos links */
+    transition: color 0.3s ease; /* Efeito de transição suave */
+  }
+  
+  .scrolled {
+    background-color: #060606;
+    transition: color 0.3s ease;
+  }
 nav ul{
     display: flex;
     justify-content: space-between;    
@@ -126,7 +142,8 @@ width: 55%;
     display: flex;
     justify-content: space-between;
     color: #060606;
-    width: 70%;
+    width: 100%;    
+    max-width: 1300px;
     margin: 20px auto auto auto;
     border-top: 1px solid rgba(225, 223, 218, 1);
     padding: 20px;
@@ -171,6 +188,7 @@ width: 55%;
 }
 .conteudo{
     width: 100%;
+    max-width: 1300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,12 +199,14 @@ width: 55%;
 .video-back{
     margin: auto;
 position: relative;
+width: 100%;
 }
 .video-back .fundo-mobile{
     display: none;
 }
 .video-back img{
     border-radius: 16px;
+    width: 100%;
 }
 .video-back::before {
     content: ''; 
@@ -226,14 +246,13 @@ margin: 0;
 }
 .wrapper-cards{
     display: flex;
-    width: 70%;
-    justify-content: space-between;
 }
 .cards{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin: 0px 32px 0px 0px;
 }
 .cards h4{
     font-family: Akira Expanded;
@@ -454,8 +473,8 @@ margin: 15px 0px 10px 0px;
     }
     .fundo{
         background-size: auto;
-        height: 139vh;
-        margin-top: 45px;
+        height: 105vh;
+        align-items: center;
     }
     .content{
         margin: 110px 0px 50px 0px;
@@ -562,7 +581,7 @@ margin: 15px 0px 10px 0px;
     }
     .wrapper-cards{
         overflow: scroll;
-        width: 95%;
+        width: 100%;
     }
     .cards{
         margin: auto 30px auto auto;
@@ -584,7 +603,7 @@ margin: 15px 0px 10px 0px;
         border-radius: 0;
     }
     .wrapper-ingressos, .info-ingressos{
-        height: 215vh;
+        height: 150vh;
         width: 100%;
     }
     .borda{
