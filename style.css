@@ -246,26 +246,28 @@ width: 100%;
 .video-play{
     position: absolute;
 }
-#sectionPalestra{
+.sectionPalestra{
     width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
 }
-#sectionPalestra h2{
+.sectionPalestra h2{
     font-family: Akira Expanded;
 font-size: 48px;
 font-weight: 700;
 line-height: 55.22px;
 margin: 0;
 }
-#sectionPalestra p{
+.sectionPalestra p{
     font-family: Open Sans;
     font-size: 22px;
     font-weight: 400;
     line-height: 29.96px;
     width: 50%;
+    text-align: center;
+    margin: 24px 0px 40px 0px;
 }
 .wrapper-cards{
     display: flex;
@@ -277,19 +279,29 @@ margin: 0;
     align-items: flex-start;
     margin: 0px 32px 0px 0px;
 }
-.cards h4{
+.wrapper-cards .cards h4{
     font-family: Akira Expanded;
     font-size: 17px;
     font-weight: 400;
     line-height: 19.56px;
+    margin: 24px 0px 4px 0px;
 }
-.cards img{
+.wrapper-cards .cards .image-palestra{
     width: 300px;
     height: 400px;
     border-radius: 16px;
 }
-.cards p{
+.wrapper-cards .cards .image-palestra img{
+    width: 100%;
+    height: 400px;
+    border-radius: 16px;
+    object-fit: cover
+}
+.wrapper-cards .cards p{
+    width: 100%;
     margin: 0px;
+    font-size: 18px;
+    text-align: left;
 }
 #sectionIngressos{
 width: 100%;
@@ -336,7 +348,7 @@ line-height: 55.22px;
 text-align: center;
 width: 50%;
 color: #FFF;
-margin: 35px 0px 10px 0px;
+margin: 58px 0px 10px 0px;
 }
 .title-ingressos p{
     font-family: Open Sans;
@@ -345,7 +357,7 @@ font-weight: 400;
 line-height: 29.96px;
 text-align: center;
 color: #FFF;
-margin: 0;
+margin: 24px 0px -25px 0px;
 
 }
 .ingressos{
@@ -636,7 +648,8 @@ align-items: center;
     }
     .wrapper-cards{
         overflow: scroll;
-        width: 100%;
+        width: 100%;        
+    justify-content: center;
     }
     .cards{
         margin: auto 30px auto auto;
