@@ -118,7 +118,8 @@ margin: 35px 0px;
 }
 .btn-inscreva button{
     border: none;
-    padding: 12px 25px;
+    width: 250px;
+    height: 72px;
     color: #FFF;
     background-color: #09F;
 font-size: 18px;
@@ -151,20 +152,20 @@ font-size: 22px;
 font-weight: 400;
 line-height: 30px;
 letter-spacing: 0em;
-width: 55%;
+width: 60%;
 }
 .conheca-ts h3{
     font-family: Akira Expanded;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 700;
-    line-height: 27.61px;
+    line-height: 44px;
     color: rgba(3, 37, 140, 1);
 }
 .atracoes{
     display: flex;
     justify-content: space-between;
     color: #060606;
-    width: 100%;    
+    width: 75%;    
     max-width: 1300px;
     margin: 20px auto auto auto;
     border-top: 1px solid rgba(225, 223, 218, 1);
@@ -192,7 +193,7 @@ width: 55%;
 }
 .wrapper-blue .box{
     background-color: rgba(3, 37, 140, 1);
-    width: 91%;
+    width: 628px;
     height: 299px;
     color: #FFF;
     position: absolute;
@@ -202,7 +203,7 @@ width: 55%;
 }
 .wrapper-blue .box h3{     
     margin: auto;
-    padding: 0px 20px 0px 40px;
+    padding: 0px 32px;
     color: #FFF;
 }
 .wrapper-blue .box h3 span{
@@ -439,7 +440,7 @@ font-size: 32px;
 font-weight: 700;
 line-height: 36.81px;
 text-align: center;
-margin: 15px 0px 10px 0px;
+margin: 24px 16px 8px 0px;
 }
 .wrapper-agenda p{
     margin: 0;
@@ -544,11 +545,11 @@ align-items: center;
     .conheca-ts{        
         width: calc(100% - 20px);
         padding: 0px 10px;
-        margin-top: -80px;
     }
     .conheca-ts h2{
         font-size: 24px;
         width: 100%;
+        line-height: 27px;
     }
     .conheca-ts p{
         width: 100%;
@@ -559,15 +560,18 @@ align-items: center;
         text-align: center;
         width: 100%;
         font-size: 18px;
+        margin: 16px 0px 0px 0px;
     }
     .atracoes{
         flex-direction: column;
         align-items: center;
         width: 100%;
-        padding: 10px 0px 10px 0px;
+        padding: 16px 0px 10px 0px;
+        margin-top: 32px;
     }
     .atracoes h3{
-        margin: 5px 0px;
+        margin: 0px;
+        font-size: 16px;
     }
     .atracoes img{
         display: none;
@@ -593,8 +597,10 @@ align-items: center;
         width: 100%;
     }
     .wrapper-blue .box h3{
-        padding: 10px 20px 10px 20px;
+        padding: 24px 16px;
         text-align: center;
+        line-height: 30px;
+        font-size: 15px;
     }
     .conteudo{
         margin: 50px 0px 20px 0px;
@@ -625,6 +631,7 @@ align-items: center;
     }
     #sectionPalestra p{
         width: 90%;
+        font-size: 16px;
         margin: 0px 0px 20px 0px;
     }
     .wrapper-cards{
