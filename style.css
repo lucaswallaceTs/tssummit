@@ -496,7 +496,7 @@ margin: 24px 16px 8px 0px;
     justify-content: space-between;
 }
 .consideracoes{
-    max-width: calc(1300px - 256px) ;
+    max-width: calc(1300px - 128px) ;
     width: calc(100% - 160px);
     padding: 64px;
     display: flex;
