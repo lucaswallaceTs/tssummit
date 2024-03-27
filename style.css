@@ -7,9 +7,19 @@ body {
             align-items: center;
         }
 
-        @media screen and (min-width: 1440px) {
+        @media screen and (min-width: 2001px) and (max-width: 2560px) {
             .fundo {
-                height: 105vh !important;
+                height: 100vh !important;
+            }
+        }
+        @media screen and (min-width: 1440px) and (max-width: 2000px) {
+            .fundo {
+                height: 125vh !important;
+            }
+        }
+        @media screen and (max-width: 1440px) {
+            .fundo {
+                height: 107vh !important;
             }
         }
 
@@ -138,6 +148,7 @@ body {
                 letter-spacing: 0em;
                 text-align: center;
                 width: 50%;
+                margin: 0px 0px 24px 0px;
             }
 
             .conheca-ts p {
@@ -291,7 +302,7 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-start;
+            align-items: center;
             margin: 0px 32px 0px 0px;
         }
 
@@ -301,7 +312,7 @@ body {
             font-size: 17px;
             font-weight: 400;
             line-height: 25.59px;
-            margin: 24px 0px 4px 0px;
+            margin: 24px 0px 0px 0px;
         }
 
         .wrapper-cards .cards .image-palestra {
@@ -321,7 +332,6 @@ body {
             width: 100%;
             margin: 0px;
             font-size: 18px;
-            text-align: left;
         }
 
         #sectionIngressos {
@@ -374,7 +384,7 @@ body {
                 text-align: center;
                 width: 65%;
                 color: #FFF;
-                margin: 58px 0px 10px 0px;
+                margin: 72px 0px 10px 0px;
             }
 
             .title-ingressos p {
@@ -626,9 +636,10 @@ body {
             }
 
                 .conheca-ts h2 {
-                    font-size: 24px;
+                    font-size: 46px;
                     width: 100%;
-                    line-height: 27px;
+                    line-height: 63px;
+                    margin: 0px 0px 16px 0px;
                 }
 
                 .conheca-ts p {
@@ -640,7 +651,6 @@ body {
                 .conheca-ts h3 {
                     text-align: center;
                     width: 100%;
-                    font-size: 18px;
                     margin: 16px 0px 0px 0px;
                 }
 
@@ -654,7 +664,7 @@ body {
 
                 .atracoes h3 {
                     margin: 0px;
-                    font-size: 16px;
+                    font-size: 18px;
                 }
 
                 .atracoes img {
@@ -688,7 +698,7 @@ body {
                     padding: 24px 16px;
                     text-align: center;
                     line-height: 30px;
-                    font-size: 15px;
+                    font-size: 20px;
                 }
 
             .conteudo {
@@ -727,11 +737,11 @@ body {
                 }
 
             #sectionPalestra h2 {
-                font-size: 24px;
+                font-size: 32px;
             }
 
             #sectionPalestra p {
-                width: 90%;
+                width: 100%;
                 font-size: 16px;
                 margin: 0px 0px 20px 0px;
             }
@@ -790,6 +800,7 @@ body {
                 width: 100%;
                 border-radius: 16px;
                 margin-bottom: 25px;
+                padding: 40px 20px 0px 20px;
             }
 
                 .card-ingresso h2 {
@@ -799,9 +810,10 @@ body {
                 }
 
             .title-ingressos h2 {
-                font-size: 24px;
+                font-size: 32px;
                 width: 100%;
                 margin: 35px 0px 0px 0px;
+                line-height: 40px;
             }
 
             .title-ingressos p {
@@ -816,7 +828,7 @@ body {
             }
 
             .card-ingresso h3 {
-                font-size: 15px;
+                font-size: 24px;
             }
 
             .info-valor .lote {
