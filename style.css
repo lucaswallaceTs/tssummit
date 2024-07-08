@@ -1,4 +1,5 @@
 body {
+<<<<<<< Updated upstream
             margin: 0;
             padding: 0;
             font-family: Open Sans, sans-serif;
@@ -364,10 +365,767 @@ body {
             background: url(https://storagefileta.blob.core.windows.net/ticketagora/site/TS-SUMMIT-2024/image-tempo.svg);
             max-width: 1300px;
             height: 850px;
+=======
+    margin: 0;
+    padding: 0;
+    font-family: Open Sans, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 2001px) and (max-width: 2560px) {
+    .fundo {
+        height: 100vh !important;
+    }
+}
+
+@media screen and (min-width: 1541px) and (max-width: 2000px) {
+    .fundo {
+        height: 125vh !important;
+    }
+}
+
+@media screen and (max-width: 1540px) {
+    .fundo {
+        height: 107vh !important;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .fundo {
+        height: 90vh !important;
+    }
+
+    .content {
+        margin: 80px 0px 50px 0px !important;
+    }
+
+    .conheca-ts {
+        width: calc(100% - 20px) !important;
+    }
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.fixed-size {
+    max-width: 1900px;
+    width: 100%;
+}
+
+.fundo {
+    height: 125vh;
+    display: flex;
+    justify-content: center;
+    background: url(https://storagefileta.blob.core.windows.net/ticketagora/site/TS-SUMMIT-2024/image-principal-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+header {
+    display: flex;
+    width: 100%;
+}
+
+nav {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    transition: color 0.6s ease;
+}
+
+    nav ul li a {
+        text-decoration: none;
+        color: #000; /* Cor dos links */
+        transition: color 0.3s ease; /* Efeito de transição suave */
+    }
+
+.scrolled {
+    background-color: #060606;
+    transition: color 0.3s ease;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    width: 100%;
+}
+
+    nav ul li {
+        list-style: none;
+        color: #FFF;
+        font-family: Open Sans, sans-serif;
+    }
+
+.active {
+    border-bottom: 3px solid #09F;
+}
+
+.content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin: 250px 0px 50px 0px;
+}
+
+    .content p:first-child {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 33px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 35px 0px;
+    }
+
+    .content .belong {
+        font-family: "Anton", sans-serif;
+        text-transform: uppercase;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 64px 0px 32px 0px;
+    }
+
+.btn-inscreva button {
+    border: none;
+    width: 250px;
+    height: 72px;
+    color: #FFF;
+    background-color: #09F;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    border-radius: 8px;
+    margin: 0px 0px 150px 0px;
+    cursor: pointer;
+}
+
+.conheca-ts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+    .conheca-ts h2 {
+        font-family: "Anton", sans-serif;
+        text-transform: uppercase;
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 96.34px;
+        letter-spacing: 0em;
+        text-align: center;
+        width: 50%;
+        margin: 0px 0px 24px 0px;
+    }
+
+    .conheca-ts p {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        width: 60%;
+    }
+
+    .conheca-ts h3 {
+        font-family: "Anton", sans-serif;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 44px;
+        color: rgba(3, 37, 140, 1);
+    }
+
+.atracoes {
+    display: flex;
+    justify-content: space-between;
+    color: #060606;
+    width: 75%;
+    max-width: 1300px;
+    margin: 20px auto auto auto;
+    border-top: 1px solid rgba(225, 223, 218, 1);
+    padding: 20px;
+}
+
+    .atracoes h3 {
+        color: #060606;
+        font-size: 28px;
+    }
+
+.wrapper {
+    display: flex;
+    max-width: 1300px;
+    width: 100%;
+    background-color: rgba(3, 37, 140, 1);
+    border-radius: 16px;
+}
+
+.wrapper-blue {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: normal;
+    text-align: left;
+    justify-content: flex-end;
+}
+
+    .wrapper-blue .box {
+        background-color: rgba(3, 37, 140, 1);
+        width: 110%;
+        height: 299px;
+        color: #FFF;
+        position: absolute;
+        display: flex;
+        top: -155px;
+        left: -73px;
+    }
+
+        .wrapper-blue .box h3 {
+            margin: auto;
+            padding: 0px 32px;
+            color: #FFF;
+        }
+
+            .wrapper-blue .box h3 span {
+                text-decoration: underline;
+            }
+
+.conteudo {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.video-back {
+    margin: auto;
+    position: relative;
+    width: 100%;
+}
+
+    .video-back .fundo-mobile {
+        display: none;
+    }
+
+    .video-back img {
+        border-radius: 16px;
+        width: 100%;
+    }
+
+    .video-back::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 16px;
+        opacity: 0.64;
+        height: 99.5%;
+        background: radial-gradient(50% 50% at 50% 50%, #03258C 0%, #222222 100%);
+        pointer-events: none;
+    }
+
+.video-play {
+    position: absolute;
+}
+
+.sectionPalestra {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    position: relative;
+}
+
+    .sectionPalestra h2 {
+        font-family: "Anton", sans-serif;
+        text-transform: uppercase;
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 96.34px;
+        margin: 0;
+    }
+
+    .sectionPalestra p {
+        font-family: Open Sans;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 29.96px;
+        max-width: 632px;
+        width: 100%;
+        text-align: center;
+        margin: 24px 0px 40px 0px;
+    }
+.fixed-cards{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;    
+    align-items: center;
+}
+.arrows{
+    display: flex;
+    max-width: 1300px;
+    width: 100%;
+    position: absolute;
+    justify-content: space-between;
+}
+.arrow-left{
+    transform: scaleX(-1);
+}
+.arrow-left, .arrow-right{
+    background-color: #03258C;
+    border-radius: 100%;
+    padding: 12px 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper-cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 1300px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 32px 0px 0px;
+}
+
+.wrapper-cards .cards h4 {
+    font-family: "Anton", sans-serif;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25.59px;
+    margin: 24px 0px 0px 0px;
+}
+
+.wrapper-cards .cards .image-palestra {
+    width: 300px;
+    height: 400px;
+    border-radius: 16px;
+}
+
+    .wrapper-cards .cards .image-palestra img {
+        width: 100%;
+        height: 400px;
+        border-radius: 16px;
+        object-fit: cover
+    }
+
+.wrapper-cards .cards p {
+    width: 100%;
+    margin: 0px;
+    font-size: 18px;
+}
+
+#sectionIngressos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-ingressos {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    border-radius: 16px;
+    margin: 50px 0px;
+    background: rgba(3, 37, 140, 1);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 850px;
+    max-width: 1300px;
+    width: 100%;
+}
+
+.info-ingressos {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: url(https://storagefileta.blob.core.windows.net/ticketagora/site/TS-SUMMIT-2024/image-tempo.svg);
+    max-width: 1300px;
+    height: 850px;
+    border-radius: 16px;
+    width: 100%;
+}
+
+.title-ingressos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .title-ingressos h2 {
+        font-family: "Anton", sans-serif;
+        text-transform: uppercase;
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 64px;
+        text-align: center;
+        width: 65%;
+        color: #FFF;
+        margin: 72px 0px 10px 0px;
+    }
+
+    .title-ingressos p {
+        font-family: Open Sans;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 29.96px;
+        text-align: center;
+        color: #FFF;
+        margin: 24px 0px -25px 0px;
+    }
+
+.ingressos {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.card-ingresso {
+    background-color: #FFF;
+    border-radius: 16px 16px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 20px 0px 20px;
+    width: 41%;
+    justify-content: space-between;
+}
+
+    .card-ingresso h3 {
+        font-family: "Anton", sans-serif;
+        text-transform: uppercase;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 48.17px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .card-ingresso h2 {
+        font-family: Open Sans, sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 65.37px;
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        color: #060606;
+    }
+
+    .card-ingresso p {
+        margin: 0;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.79px;
+        text-align: center;
+        color: #060606;
+    }
+
+.info-valor {
+    background-color: rgba(239, 240, 242, 1);
+    border-radius: 32px 32px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    padding: 40px;
+    width: 70%;
+}
+
+    .info-valor p {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24.51px;
+        margin: 10px 0px;
+    }
+
+    .info-valor .lote {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+.card-ingresso button {
+    background-color: rgba(3, 37, 140, 1);
+    padding: 20px 0px;
+    width: 200px;
+    color: #FFF;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.wrapper-agenda {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(239, 240, 242, 1);
+    border-radius: 16px;
+    padding: 35px 0px;
+}
+
+#sectionAgenda {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-agenda h3 {
+    font-family: "Anton", sans-serif;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48.17px;
+    text-align: center;
+    margin: 24px 16px 8px 0px;
+}
+
+.wrapper-agenda p {
+    margin: 0;
+}
+
+#sectionPatrocinadores {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionPatrocinadores {
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .sectionPatrocinadores h3 {
+        font-family: "Anton", sans-serif;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 27.61px;
+        text-align: center;
+        z-index: 2;
+    }
+
+    #sectionPatrocinadores button {
+        background-color: rgba(3, 37, 140, 1);
+        padding: 20px 0px;
+        width: 200px;
+        color: #FFF;
+        border: none;
+        border-radius: 8px;
+        font-weight: 700;
+        font-family: 'Open Sans';
+        font-size: 20px;
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+.row-images {
+    margin: 15px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+    .row-images .container-image {
+        width: 165px;
+    }
+
+        .row-images .container-image img {
+            width: 100%;
+        }
+
+        .row-images .container-image .ecco {
+            transform: scale(2);
+        }
+
+        .row-images .container-image .other {
+            position: relative;
+            z-index: 100;
+            margin: 20px 10px 0px 20px;
+        }
+
+
+.consideracoes {
+    max-width: calc(1300px - 128px);
+    width: calc(100% - 160px);
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(239, 240, 242, 1);
+    border-radius: 16px;
+    margin: 100px auto 40px auto;
+}
+
+    .consideracoes img {
+        width: 62px;
+        height: 50px;
+    }
+
+    .consideracoes p {
+        font-size: 22px;
+    }
+
+.copy {
+    margin: 40px auto;
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    nav ul a {
+        margin: 10px 15px 15px 0px;
+    }
+
+    nav ul li {
+        width: max-content;
+    }
+
+    nav ul {
+        overflow-x: scroll;
+        margin: 10px 0px 5px 0px;
+    }
+
+    .fundo {
+        background-size: auto;
+        height: 105vh;
+        align-items: center;
+    }
+
+    .content {
+        margin: 110px 0px 50px 0px;
+        width: 95%;
+    }
+
+        .content p:first-child {
+            font-size: 12px;
+            margin: 35px 0px 10px 0px;
+        }
+
+        .content img {
+            width: 100%;
+        }
+
+    .btn-inscreva {
+        width: 80%;
+    }
+
+        .btn-inscreva button {
+            width: 100%;
+        }
+
+    .conheca-ts {
+        width: calc(100% - 20px);
+        padding: 0px 10px;
+    }
+
+        .conheca-ts h2 {
+            font-size: 46px;
+            width: 100%;
+            line-height: 63px;
+            margin: 0px 0px 16px 0px;
+        }
+
+        .conheca-ts p {
+            width: 100%;
+            margin: auto;
+            font-size: 16px;
+        }
+
+        .conheca-ts h3 {
+            text-align: center;
+            width: 100%;
+            margin: 16px 0px 0px 0px;
+        }
+
+    .atracoes {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 16px 0px 10px 0px;
+        margin-top: 32px;
+    }
+
+        .atracoes h3 {
+            margin: 0px;
+            font-size: 22px;
+        }
+
+        .atracoes img {
+            display: none;
+        }
+
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 16px;
+        width: 100%;
+    }
+
+        .wrapper img {
+>>>>>>> Stashed changes
             border-radius: 16px;
             width: 100%;
         }
 
+<<<<<<< Updated upstream
         .title-ingressos {
             width: 100%;
             display: flex;
@@ -493,10 +1251,65 @@ body {
 
         #sectionAgenda {
             width: 100%;
+=======
+    .wrapper-blue .box {
+        position: sticky;
+        height: auto;
+        text-align: left;
+        font-size: 16px;
+        line-height: 30px;
+        border-radius: 16px;
+        width: 100%;
+    }
+
+        .wrapper-blue .box h3 {
+            padding: 24px 16px;
+            text-align: center;
+            line-height: 30px;
+            font-size: 20px;
+        }
+
+        .arrows{
+            display: none;
+        }
+    .conteudo {
+        margin: 50px 0px 20px 0px;
+    }
+
+    .video-back {
+        width: 100%;
+        position: static;
+    }
+
+        .video-back .fundo-mobile {
+            display: block;
+            position: inherit;
+        }
+
+        .video-back .fundo-video {
+            display: none;
+        }
+
+        .video-back img {
+            width: 100%;
+        }
+
+    .video-play {
+        display: flex;
+        justify-content: center;
+    }
+
+        .video-play img {
+            width: 70%;
+        }
+
+        .video-play a {
+>>>>>>> Stashed changes
             display: flex;
             justify-content: center;
         }
 
+<<<<<<< Updated upstream
         .wrapper-agenda h3 {
             font-family: "Anton", sans-serif;
             text-transform: uppercase;
@@ -868,3 +1681,141 @@ body {
                 align-items: center;
             }
         }
+=======
+    #sectionPalestra h2 {
+        font-size: 32px;
+    }
+
+    #sectionPalestra p {
+        width: 100%;
+        font-size: 16px;
+        margin: 0px 0px 20px 0px;
+        text-align: center;
+    }
+    #sectionPalestra .wrapper-cards .card-last p {
+        margin: 0px 0px -3px 0px;
+    }
+    .wrapper-cards {
+        overflow: scroll;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .cards {
+        margin: auto 30px auto auto;
+    }
+
+        .cards:last-child {
+            margin: 0;
+        }
+
+        .cards h4 {
+            margin: 10px 0px 5px 0px;
+        }
+
+        .cards p {
+            text-align: left;
+            margin: 0px;
+        }
+
+    .info-ingressos {
+        justify-content: flex-start;
+    }
+
+    .wrapper-ingressos {
+        border-radius: 0;
+    }
+
+    .wrapper-ingressos, .info-ingressos {
+        height: 150vh;
+        width: 100%;
+    }
+
+    .borda {
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(225, 223, 218, 1);
+    }
+
+    .info-valor {
+        width: 80%;
+    }
+
+    .ingressos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-ingresso {
+        width: 100%;
+        border-radius: 16px;
+        margin-bottom: 25px;
+        padding: 40px 20px 0px 20px;
+    }
+
+        .card-ingresso h2 {
+            font-size: 32px;
+            margin-bottom: 0px;
+            line-height: 43.58px;
+        }
+
+    .title-ingressos h2 {
+        font-size: 32px;
+        width: 100%;
+        margin: 35px 0px 0px 0px;
+        line-height: 40px;
+    }
+
+    .title-ingressos p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .info-valor {
+        background-color: #FFF;
+        padding: 0px 0px 40px 0px;
+        margin-top: 0px;
+    }
+
+    .card-ingresso h3 {
+        font-size: 24px;
+    }
+
+    .info-valor .lote {
+        margin: 0px 0px 15px 0px;
+    }
+
+    .wrapper-agenda {
+        width: 90%;
+    }
+
+        .wrapper-agenda h3 {
+            font-size: 24px;
+        }
+
+    #sectionPatrocinadores button {
+        font-weight: 700;
+    }
+
+    .row-images {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .consideracoes {
+        width: calc(100% - 40px);
+        padding: 64px 20px;
+        border-radius: 0;
+    }
+
+        .consideracoes p {
+            font-size: 16px;
+        }
+
+    .copy {
+        width: calc(100% - 40px);
+        padding: 0px 20px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+>>>>>>> Stashed changes
